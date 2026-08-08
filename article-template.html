@@ -1,0 +1,101 @@
+<!--
+============================================================================
+  قالب مقال جديد — كيف تضيف مقال جديد للمدونة (خطوات بسيطة):
+
+  1) انسخ (Duplicate) هذا الملف وسمّه article-11.html (أو أي رقم تالٍ متوفر).
+  2) عدّل داخل وسم <head>:
+       - <title> — عنوان الصفحة (يظهر بتبويب المتصفح ونتائج جوجل)
+       - <meta name="description"> — وصف مختصر (150-160 حرف) يظهر بنتائج البحث
+       - <link rel="canonical"> — غيّر article-XX.html لاسم الملف الجديد
+  3) عدّل داخل <section class="article-hero">:
+       - kicker: كلمة تصنيف قصيرة (مثال: "دليل الفلاتر")
+       - h1: عنوان المقال الرئيسي
+  4) اكتب محتوى المقال داخل <article class="prose">...</article>:
+       - كل فقرة بين <p> و </p>
+       - كل عنوان فرعي بين <h2> و </h2>
+       - أي قائمة نقاط بين <ul><li>...</li></ul>
+  5) بعد ما تخلص، أضف رابط بطاقة جديدة بملف blog.html (انسخ إحدى
+     البطاقات الموجودة <a class="blog-card" href="...">...</a> وعدّل
+     الرابط والعنوان والنص المختصر).
+============================================================================
+-->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="mada-icon.png">
+<title>عنوان المقال هنا | مدى</title>
+<meta name="description" content="وصف مختصر وجذاب للمقال، بحدود 150-160 حرف، يتضمن الكلمات المفتاحية الأساسية.">
+<link rel="canonical" href="https://madafilter.com/article-XX.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<script src="site.js" defer></script>
+</head>
+<body>
+<div class="noise"></div>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">
+      <img src="mada-icon.png" alt="مدى">
+      <span>مدى</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#home">الرئيسية</a>
+      <a href="index.html#about">من نحن</a>
+      <a href="products.html">المنتجات</a>
+      <a href="blog.html" class="active">مقالات</a>
+      <a href="index.html#contact">تواصل معنا</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn-wa" href="https://wa.me/963947817276" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.5 0-3-.4-4.3-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.4 14.9 4 13.5 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8z"/></svg>
+        <span>واتساب</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<section class="article-hero">
+  <div class="container">
+    <p class="kicker">تصنيف المقال هنا</p>
+    <h1>عنوان المقال الرئيسي هنا</h1>
+    <p class="meta">مدى للفلاتر وزيوت السيارات — سوريا</p>
+  </div>
+</section>
+
+<article class="prose">
+
+  <p>فقرة المقدمة هنا — عرّف الموضوع بجملتين إلى ثلاث جمل.</p>
+
+  <h2>عنوان فرعي أول</h2>
+  <p>محتوى الفقرة هنا.</p>
+
+  <h2>عنوان فرعي ثانٍ</h2>
+  <ul>
+    <li>نقطة أولى</li>
+    <li>نقطة ثانية</li>
+    <li>نقطة ثالثة</li>
+  </ul>
+
+  <h2>نصيحة مدى</h2>
+  <p>اربط دايمًا نهاية المقال بمنتج أو خدمة فعلية من مدى، بشكل طبيعي غير مبالغ فيه.</p>
+
+  <div class="cta-box">
+    <p>تحتاج مساعدة باختيار المنتج المناسب أو عرض سعر جملة؟</p>
+    <a href="https://wa.me/963947817276" target="_blank" rel="noopener" class="btn btn-primary">تواصلوا معنا عبر واتساب</a>
+  </div>
+</article>
+
+<footer>
+  <div class="container" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:14px;">
+    <span class="footer-note">جزء من ناصر غروب</span>
+    <span class="footer-copy">© 2026 مدى — جميع الحقوق محفوظة</span>
+  </div>
+</footer>
+
+</body>
+</html>

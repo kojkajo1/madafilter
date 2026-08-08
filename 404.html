@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="mada-icon.png">
+<title>Page Not Found — Mada Filters | الصفحة غير موجودة — مدى</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@300;400;500;600&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<script src="site.js" defer></script>
+<style>
+  .notfound{
+    min-height:70vh; display:flex; flex-direction:column; align-items:center; justify-content:center;
+    text-align:center; padding:60px 24px;
+  }
+  .notfound img{ width:64px; height:64px; margin-bottom:28px; opacity:.9; }
+  .notfound .code{
+    font-family:'Barlow Condensed', sans-serif; font-size:clamp(60px,10vw,110px); font-weight:700; color:var(--red);
+    line-height:1;
+  }
+  .notfound h1{
+    font-family:'Barlow Condensed', sans-serif; font-size:clamp(22px,3vw,30px); font-weight:600; text-transform:uppercase;
+    margin:18px 0 10px;
+  }
+  .notfound p{ color:var(--muted); font-size:15px; max-width:440px; margin-bottom:30px; line-height:1.8; }
+  .notfound .ar{ font-family:'Tajawal', sans-serif; margin-top:6px; }
+  .notfound .actions{ display:flex; gap:14px; flex-wrap:wrap; justify-content:center; }
+</style>
+</head>
+<body>
+<div class="noise"></div>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">
+      <img src="mada-icon.png" alt="Mada">
+      <span>MADA</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="products.html">Products</a>
+      <a href="blog-en.html">Articles</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn-wa" href="https://wa.me/963947817276" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.5 0-3-.4-4.3-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.4 14.9 4 13.5 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8z"/></svg>
+        <span>WhatsApp</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<div class="notfound">
+  <img src="mada-icon.png" alt="Mada">
+  <div class="code">404</div>
+  <h1>Page Not Found</h1>
+  <p>The page you're looking for doesn't exist or may have moved.</p>
+  <p class="ar">هذه الصفحة غير موجودة أو تم نقلها.</p>
+  <div class="actions">
+    <a href="index.html" class="btn btn-primary">Home / الرئيسية</a>
+    <a href="products.html" class="btn btn-outline">Products / المنتجات</a>
+  </div>
+</div>
+
+<footer>
+  <div class="container" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:14px;">
+    <span class="footer-note">Part of Nasser Group</span>
+    <span class="footer-copy">© 2026 Mada — All Rights Reserved</span>
+  </div>
+</footer>
+
+</body>
+</html>
